@@ -159,7 +159,7 @@ function numberOfTries(){
 
     let numberoftries = ((lowalpha * 26) + (upalpha * 26) + (num * 10) + (symbols * 35))**lengthofPass;
     console.log(numberoftries)
-    document.getElementById('displayTries').innerHTML = "<p>Result: " + numberoftries + "</p>";
+    document.getElementById('displayTries').innerHTML = "<p>Your password can be cracked in : " + numberoftries + " tries</p>";
 }
 
 
