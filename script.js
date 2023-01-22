@@ -149,7 +149,6 @@ function numberOfTries(){
     if(/[0-9]/.test(pass)){
         num = 1;
         console.log("Has numbers")
-
     }
     
     if(containsSymbol(pass)){
@@ -160,9 +159,11 @@ function numberOfTries(){
 
     let numberoftries = ((lowalpha * 26) + (upalpha * 26) + (num * 10) + (symbols * 35))**lengthofPass;
     console.log(numberoftries)
-    // document.getElementById('displaytries').innerHTML = numberoftries
+    document.getElementById('displayTries').innerHTML = "<p>Result: " + numberoftries + "</p>";
 }
-function containsUppercase(str) {
+
+
+/* function containsUppercase(str) {
     return /^[A-Z]+$/.test(str);
 }
 function containsLowercase(str) {
@@ -170,7 +171,8 @@ function containsLowercase(str) {
 }
 function containsNumbers(str) {
     return /[0-9]/.test(str);
-}
+} */
+
 function containsSymbol(str){
     var format = /[!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?]+/;
 
