@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator | Password Pal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Unbounded">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</head>
+<body class="passwordBody">
+    <div class="header">
+        <p class="title">
+            Password Generator
+            <br>
+            <!-- NOTE: For some reason, this button no longer works after JS was implemented. -->
+            <div class="homeOptions">
+                <button class="backToHomeButton">
+                    <a href="index.html" class="backToHomeLink">Home</a>
+                </button>
+            </div>
+        </p>
+    </div>
+    <div class="generationContent">
+        <div class="grid-container" id="">
+            <form class="grid-item" id="passwordForm">
+                Generate your own password below.
+                <!-- <br>
+                <br> -->
+                <h3 id="PasswordDisplay"> Password </h3>
+                <!-- <br> -->
+                <div class="generationButtons">
+                    <button type="submit" class="btn btn-success" id="generationSubmit">Generate</button>
+                    <button type="button" class="btn btn-success" onclick="copyToClipboard()">Copy</button>
+                </div>
+                <p id="miscText"> </p>
+            </form>
+            <form class="grid-item checkboxes" id="checkboxes">
+                
+                <!-- set these into column -->
+                <label for="characterAmountNumber">Number Of Characters</label>
+                <br>
+                <br>
+                <input type="range" min="5" max="50" id="characterAmountRange">
+                <input type="number" min="5" max="50" id="characterAmountNumber" value="25">
+    
+                <!-- Checkboxes -->
+                <input checked type="checkbox" id="lower" name="lower" value="Lower">
+                <label for="lower"> lowercase characters </label>
+                <input checked type="checkbox" id="upper" name="upper" value="Upper">
+                <label for="upper"> uppercase characters </label>
+                <input checked type="checkbox" id="number" name="number" value="Number">
+                <label for="number"> number characters </label>
+                <input checked type="checkbox" id="special" name="special" value="Special">
+                <label for="special"> special characters </label>
+                <br>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="subtext">
+            ConUHacks VII 2023 • 
+            <a href="credits.html" class="url">
+                Contributors List
+            </a>
+        </p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,278 @@
+/* 
+#157A6E
+#4A9B78
+#77B28C
+#C2C5BB
+*/
+.h1{
+    background-color: #157A6E;
+}
+
+
+body {
+    height: 100%; 
+}
+
+
+.header {
+    padding: 1em;
+    margin: 0;
+    background-image: linear-gradient(to bottom right, #4A9B78, #157A6E);
+    background-attachment: fixed;
+}
+.body {
+    margin: 0;
+    text-align: center;
+}
+.footer {
+    position: fixed;
+    bottom: 0;
+    height: 20%;
+    max-height: 2em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    padding-top: 5px;
+    margin: 0;
+    color: #C2C5BB;
+    background-color: darkslategrey;
+}
+.title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: center;
+    color: #182f20;
+    /* background-color: #157A6E; */
+}
+.subtext {
+    font-family: 'Unbounded', Courier, monospace;
+    font-weight: lighter;
+    font-size: 15px;
+    text-align: center;
+}
+.url {
+    text-decoration: none;
+    color: #C2C5BB;
+    transition: 0.25s;
+}
+.url:hover {
+    color: #647f6c;
+    transition: 0.25s;
+}
+
+
+
+#grad {
+    background-image: linear-gradient(to bottom right, #4A9B78, #157A6E);
+    background-attachment: fixed;
+}
+.homeBody {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -60%);
+}
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+}
+p.homeContent {
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 45px;
+    font-weight: bolder;
+    color: #182f20;
+}
+a.homeContent {
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 20px;
+    width: 30em;
+    padding: 1.5em;
+    color: #182f20;
+    text-decoration: none;
+}
+a.homeContent:hover {
+    color: #C2C5BB;
+}
+button.homeContent {
+    width: 30em;
+    padding: 0;
+    border: none;
+    opacity: 0.3;
+    transition: 0.75s;
+}
+button.homeContent:hover {
+    background-color: #0d1c12;
+    transition: 0.75s;
+}
+
+
+
+.passwordBody {
+    background-color: #c7d8d1;
+}
+.generationContent {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.grid-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    column-gap: 45px;
+    margin-top: 5%;
+}
+.grid-item {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    font-size: 25px;
+    text-align: center;
+    padding: auto;
+}
+#verificationContent {
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+/*Checkboxes*/
+#checkboxes {
+    display: grid;
+    margin: 0;
+    font-size: 20px;
+    grid-template-columns: auto auto;
+    row-gap: 1rem;
+    column-gap: 1rem;    
+    justify-content: center;
+    align-items: center;
+}
+#passwordForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: inherit;
+    height: 25%;
+    max-width: 45%;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 5%;
+}
+#password {
+    height: 2.5em;
+    width: 50%;
+    max-width: 15em;
+    padding: .5em .5em .5em .5em;
+}
+#send {
+    height: 3em;
+    width: 10em;
+}
+#miscText {
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 15px;
+    padding: 1.5em;
+    color: #182f20;
+}
+.btn btn-success{
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+
+/*Back to home button*/
+.backToHomeButton {
+    position: absolute;
+    top: 2em;
+    height: 3em;
+    width: 6em;
+    margin-left: 15%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    opacity: 0.3;
+    transition: 0.3s;
+}
+.backToHomeButton:hover {
+    background-color: #0d1c12;
+    transition: 0.3s;
+}
+.backToHomeLink {
+    height: 3em;
+    width: 20em;
+    padding: 1.5em;
+    border: none;
+    border-radius: 10px;
+    color: #182f20;
+    text-decoration: none;
+    font-family: 'Unbounded', Courier, monospace;
+    font-weight: lighter;
+    font-size: 12px;
+}
+.backToHomeLink:hover {
+    color: #C2C5BB;
+}
+
+
+
+.creditsBody {
+    height: 100%;
+    background-image: linear-gradient(to bottom right, #4A9B78, #157A6E);
+    background-attachment: fixed;
+}
+.creditsContent {
+    position: absolute;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.creditsBackground {
+    padding: 3em 5em 3em 5em;
+    background-color: #c7d8d1;
+    border-radius: 10px;
+    transform: translate(0, -20%);
+}
+.creditsList {
+    padding: 0;
+    margin: 0;
+    text-align: center;
+
+}
+a.creditsList {
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 25px;
+    font-weight: bolder;
+    text-decoration: none;
+    color: #182f20;
+    transition: 0.3s;
+}
+a.creditsList:hover {
+    color: #426b51;
+    transition: 0.3s;
+}
+dd.creditsList {
+    /* margin-bottom: 1.5em; */
+    font-family: 'Unbounded', Courier, monospace;
+    font-size: 15px;
+    font-weight: lighter;
+    color: #426b51;
+}
